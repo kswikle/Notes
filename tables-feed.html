@@ -23,6 +23,7 @@
     color: var(--ink);
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
     line-height: 1.5;
+    -webkit-text-size-adjust: 100%;
   }
   header {
     max-width: 720px;
@@ -61,17 +62,25 @@
   .feed {
     max-width: 720px;
     margin: 0 auto;
-    padding: 0 24px 64px;
+    padding: 0 24px 16px;
     display: flex;
     flex-direction: column;
     gap: 20px;
   }
-  .card {
+  a.card {
     background: var(--card);
     border: 1px solid var(--line);
     border-radius: 14px;
     overflow: hidden;
     box-shadow: 0 1px 2px rgba(0,0,0,0.03);
+    display: block;
+    color: inherit;
+    text-decoration: none;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+  }
+  a.card:hover, a.card:active {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
   }
   .card-image {
     width: 100%;
@@ -111,7 +120,7 @@
     margin-bottom: 10px;
   }
   dl {
-    margin: 0;
+    margin: 0 0 12px;
     display: grid;
     grid-template-columns: 110px 1fr;
     row-gap: 4px;
@@ -120,18 +129,26 @@
   }
   dt { color: var(--muted); }
   dd { margin: 0; color: var(--ink); }
+  .view-link {
+    font-size: 13px;
+    color: var(--accent);
+    font-weight: 600;
+    letter-spacing: 0.02em;
+  }
   footer {
     text-align: center;
     color: var(--muted);
     font-size: 12px;
-    padding: 0 24px 40px;
+    padding: 20px 24px 40px;
+    max-width: 720px;
+    margin: 0 auto;
   }
 </style>
 </head>
 <body>
   <header>
     <h1>Fluted & Slatted Media Consoles</h1>
-    <p>A shortlist of 18 tables, organized by tier. Swap the placeholder images for real product photos as needed.</p>
+    <p>18 tables across two tiers. Tap any card to open the product page with real photos and current pricing.</p>
   </header>
 
   <div class="tier-header">
@@ -140,7 +157,7 @@
   </div>
   <section class="feed">
 
-    <article class="card">
+    <a class="card" href="https://www.amazon.com/LKTART-Sideboard-Cabinet-Storage-Adjustable/dp/B0DDPDKFRK" target="_blank" rel="noopener">
       <img class="card-image" src="https://placehold.co/800x500/efe9e0/8a6a4a?text=LKTART+Fluted+Sideboard" alt="LKTART Fluted Sideboard" />
       <div class="card-body">
         <div class="badges"><span class="badge tier1">Tier 1</span><span class="badge">Fluted</span><span class="badge">Rounded</span></div>
@@ -151,10 +168,11 @@
           <dt>Door Style</dt><dd>Fluted (Wave Pattern)</dd>
           <dt>Corner Shape</dt><dd>Rounded (Pill-Shaped)</dd>
         </dl>
+        <div class="view-link">View on Amazon →</div>
       </div>
-    </article>
+    </a>
 
-    <article class="card">
+    <a class="card" href="https://www.target.com/p/70-modern-fluted-tv-stand-for-tvs-up-to-80-brown-entertainment-center-with-storage-solid-wood-legs-media-console-for-living-room-panipeachy/-/A-1009036812" target="_blank" rel="noopener">
       <img class="card-image" src="https://placehold.co/800x500/efe9e0/8a6a4a?text=Panipeachy+Modern+Fluted" alt="Panipeachy Modern Fluted" />
       <div class="card-body">
         <div class="badges"><span class="badge tier1">Tier 1</span><span class="badge">Fluted</span><span class="badge">Rounded</span></div>
@@ -165,10 +183,11 @@
           <dt>Door Style</dt><dd>Fluted</dd>
           <dt>Corner Shape</dt><dd>Rounded</dd>
         </dl>
+        <div class="view-link">View on Target →</div>
       </div>
-    </article>
+    </a>
 
-    <article class="card">
+    <a class="card" href="https://www.costway.com/fluted-tv-stand-for-tvs-up-to-60-mid-century-curved-entertainment-center.html" target="_blank" rel="noopener">
       <img class="card-image" src="https://placehold.co/800x500/efe9e0/8a6a4a?text=Costway+Fluted+Media+Stand" alt="Costway Fluted Media Stand" />
       <div class="card-body">
         <div class="badges"><span class="badge tier1">Tier 1</span><span class="badge">Fluted</span><span class="badge">Rounded</span></div>
@@ -179,10 +198,11 @@
           <dt>Door Style</dt><dd>Fluted</dd>
           <dt>Corner Shape</dt><dd>Rounded</dd>
         </dl>
+        <div class="view-link">View on Costway →</div>
       </div>
-    </article>
+    </a>
 
-    <article class="card">
+    <a class="card" href="https://www.target.com/p/orrd-mid-century-modern-tv-stand-with-fluted-tambour-doors-70-87-walnut-media-console-for-up-to-75-inch-tv-storage-cabinet-buffet-for-living-room/-/A-1007924925" target="_blank" rel="noopener">
       <img class="card-image" src="https://placehold.co/800x500/efe9e0/8a6a4a?text=70%22+Fluted+TV+Stand+(Target)" alt="70-inch Fluted TV Stand from Target" />
       <div class="card-body">
         <div class="badges"><span class="badge tier1">Tier 1</span><span class="badge">Fluted</span><span class="badge">Square</span></div>
@@ -193,10 +213,11 @@
           <dt>Door Style</dt><dd>Fluted</dd>
           <dt>Corner Shape</dt><dd>Square</dd>
         </dl>
+        <div class="view-link">View on Target →</div>
       </div>
-    </article>
+    </a>
 
-    <article class="card">
+    <a class="card" href="https://www.walmart.com/ip/Selooye-Mid-Century-TV-Stand-Modern-TV-Console-for-TVs-up-to-70-Inches-Entertainment-Center-with-Storage-TV-and-Media-Consol-62-Inch-Natural/15688222870" target="_blank" rel="noopener">
       <img class="card-image" src="https://placehold.co/800x500/efe9e0/8a6a4a?text=Walmart+62%22+MCM+Tambour" alt="Walmart 62-inch MCM Tambour" />
       <div class="card-body">
         <div class="badges"><span class="badge tier1">Tier 1</span><span class="badge">Slatted (Tambour)</span><span class="badge">Rounded</span></div>
@@ -207,10 +228,11 @@
           <dt>Door Style</dt><dd>Slatted (Tambour)</dd>
           <dt>Corner Shape</dt><dd>Rounded</dd>
         </dl>
+        <div class="view-link">View on Walmart →</div>
       </div>
-    </article>
+    </a>
 
-    <article class="card">
+    <a class="card" href="https://www.wayfair.com/furniture/pdp/george-oliver-70-inch-fluted-tv-stand-with-storage-drawers-and-cabinets-modern-entertainment-center-with-cable-management-and-solid-wood-legs-w117676725.html" target="_blank" rel="noopener">
       <img class="card-image" src="https://placehold.co/800x500/efe9e0/8a6a4a?text=George+Oliver+Fluted+Console" alt="George Oliver Fluted Console" />
       <div class="card-body">
         <div class="badges"><span class="badge tier1">Tier 1</span><span class="badge">Fluted</span><span class="badge">Square</span></div>
@@ -221,10 +243,11 @@
           <dt>Door Style</dt><dd>Fluted</dd>
           <dt>Corner Shape</dt><dd>Square</dd>
         </dl>
+        <div class="view-link">View on Wayfair →</div>
       </div>
-    </article>
+    </a>
 
-    <article class="card">
+    <a class="card" href="https://walkeredison.com/products/scandinavian-sideboard-accent-cabinet-and-side-table" target="_blank" rel="noopener">
       <img class="card-image" src="https://placehold.co/800x500/efe9e0/8a6a4a?text=Walker+Edison+Reema%2FMaya" alt="Walker Edison Reema/Maya" />
       <div class="card-body">
         <div class="badges"><span class="badge tier1">Tier 1</span><span class="badge">Reeded</span><span class="badge">Square</span></div>
@@ -235,10 +258,11 @@
           <dt>Door Style</dt><dd>Reeded</dd>
           <dt>Corner Shape</dt><dd>Square</dd>
         </dl>
+        <div class="view-link">View on Walker Edison →</div>
       </div>
-    </article>
+    </a>
 
-    <article class="card">
+    <a class="card" href="https://www.walmart.com/ip/Dextrus-Fluted-LED-TV-Stand-for-65-Inch-TV-Farmhouse-TV-Media-Console-Table-with-Power-Outlets-Walnut/14535621054" target="_blank" rel="noopener">
       <img class="card-image" src="https://placehold.co/800x500/efe9e0/8a6a4a?text=Dextrus+Mid-Century+Stand" alt="Dextrus Mid-Century Stand" />
       <div class="card-body">
         <div class="badges"><span class="badge tier1">Tier 1</span><span class="badge">Smooth/Slatted</span><span class="badge">Square</span></div>
@@ -249,10 +273,11 @@
           <dt>Door Style</dt><dd>Smooth/Slatted</dd>
           <dt>Corner Shape</dt><dd>Square</dd>
         </dl>
+        <div class="view-link">View on Walmart →</div>
       </div>
-    </article>
+    </a>
 
-    <article class="card">
+    <a class="card" href="https://www.amazon.com/GDFStudio-Sideboard-Farmhouse-Freestanding-Entryway/dp/B0F47ZB39V" target="_blank" rel="noopener">
       <img class="card-image" src="https://placehold.co/800x500/efe9e0/8a6a4a?text=GDFStudio+Roy+Farmhouse" alt="GDFStudio Roy Farmhouse" />
       <div class="card-body">
         <div class="badges"><span class="badge tier1">Tier 1</span><span class="badge">Tambour</span><span class="badge">Square</span></div>
@@ -263,8 +288,9 @@
           <dt>Door Style</dt><dd>Tambour (Slatted)</dd>
           <dt>Corner Shape</dt><dd>Square</dd>
         </dl>
+        <div class="view-link">View on Amazon →</div>
       </div>
-    </article>
+    </a>
 
   </section>
 
@@ -274,7 +300,7 @@
   </div>
   <section class="feed">
 
-    <article class="card">
+    <a class="card" href="https://www.homedepot.com/p/Spruce-Spring-Julian-Oak-Wood-Modern-Sideboard-with-Rounded-Edges-Adjustable-Shelves-Elevated-Base-Soft-Close-Hinges-Metal-Handles-SSKJWTSB010-OAK/338669412" target="_blank" rel="noopener">
       <img class="card-image" src="https://placehold.co/800x500/dfece4/2b5d4a?text=Spruce+%26+Spring+Julian" alt="Spruce & Spring Julian" />
       <div class="card-body">
         <div class="badges"><span class="badge tier2">Tier 2</span><span class="badge">Smooth Walnut</span><span class="badge">Rounded</span></div>
@@ -285,10 +311,11 @@
           <dt>Door Style</dt><dd>Smooth (Walnut Veneer)</dd>
           <dt>Corner Shape</dt><dd>Rounded</dd>
         </dl>
+        <div class="view-link">View on Home Depot →</div>
       </div>
-    </article>
+    </a>
 
-    <article class="card">
+    <a class="card" href="https://www.castlery.com/us/products/luka-tv-stand-walnut" target="_blank" rel="noopener">
       <img class="card-image" src="https://placehold.co/800x500/dfece4/2b5d4a?text=Castlery+Luka+TV+Stand" alt="Castlery Luka TV Stand" />
       <div class="card-body">
         <div class="badges"><span class="badge tier2">Tier 2</span><span class="badge">Slatted (Vertical)</span><span class="badge">Square</span></div>
@@ -299,10 +326,11 @@
           <dt>Door Style</dt><dd>Slatted (Vertical)</dd>
           <dt>Corner Shape</dt><dd>Square</dd>
         </dl>
+        <div class="view-link">View on Castlery →</div>
       </div>
-    </article>
+    </a>
 
-    <article class="card">
+    <a class="card" href="https://www.article.com/product/24418/lenia-63-low-media-unit-walnut" target="_blank" rel="noopener">
       <img class="card-image" src="https://placehold.co/800x500/dfece4/2b5d4a?text=Article+Lenia+63%22" alt="Article Lenia 63-inch" />
       <div class="card-body">
         <div class="badges"><span class="badge tier2">Tier 2</span><span class="badge">Slatted (Spindle)</span><span class="badge">Square</span></div>
@@ -313,10 +341,11 @@
           <dt>Door Style</dt><dd>Slatted (Spindle)</dd>
           <dt>Corner Shape</dt><dd>Square</dd>
         </dl>
+        <div class="view-link">View on Article →</div>
       </div>
-    </article>
+    </a>
 
-    <article class="card">
+    <a class="card" href="https://www.article.com/product/24430/nera-63-low-media-unit-walnut" target="_blank" rel="noopener">
       <img class="card-image" src="https://placehold.co/800x500/dfece4/2b5d4a?text=Article+Nera+63%22" alt="Article Nera 63-inch" />
       <div class="card-body">
         <div class="badges"><span class="badge tier2">Tier 2</span><span class="badge">Smooth Veneer</span><span class="badge">Square</span></div>
@@ -327,10 +356,11 @@
           <dt>Door Style</dt><dd>Smooth (Veneer)</dd>
           <dt>Corner Shape</dt><dd>Square</dd>
         </dl>
+        <div class="view-link">View on Article →</div>
       </div>
-    </article>
+    </a>
 
-    <article class="card">
+    <a class="card" href="https://www.allmodern.com/furniture/pdp/iris-71-wide-sideboard-jjp10955.html" target="_blank" rel="noopener">
       <img class="card-image" src="https://placehold.co/800x500/dfece4/2b5d4a?text=AllModern+Iris+Sideboard" alt="AllModern Iris Sideboard" />
       <div class="card-body">
         <div class="badges"><span class="badge tier2">Tier 2</span><span class="badge">Slatted (Tambour)</span><span class="badge">Pill-Shaped</span></div>
@@ -341,10 +371,11 @@
           <dt>Door Style</dt><dd>Slatted (Tambour)</dd>
           <dt>Corner Shape</dt><dd>Pill-Shaped</dd>
         </dl>
+        <div class="view-link">View on AllModern →</div>
       </div>
-    </article>
+    </a>
 
-    <article class="card">
+    <a class="card" href="https://modway.com/products/waterflute-70-fluted-sideboard-cabinet-by-modway-eei-7198" target="_blank" rel="noopener">
       <img class="card-image" src="https://placehold.co/800x500/dfece4/2b5d4a?text=Modway+Waterflute+70%22" alt="Modway Waterflute 70-inch" />
       <div class="card-body">
         <div class="badges"><span class="badge tier2">Tier 2</span><span class="badge">Fluted</span><span class="badge">Waterfall/Rounded</span></div>
@@ -355,10 +386,11 @@
           <dt>Door Style</dt><dd>Fluted</dd>
           <dt>Corner Shape</dt><dd>Waterfall / Rounded</dd>
         </dl>
+        <div class="view-link">View on Modway →</div>
       </div>
-    </article>
+    </a>
 
-    <article class="card">
+    <a class="card" href="https://www.allmodern.com/furniture/pdp/daima-624-w-storage-tv-stand-a110000667.html" target="_blank" rel="noopener">
       <img class="card-image" src="https://placehold.co/800x500/dfece4/2b5d4a?text=AllModern+Daima+62.4%22" alt="AllModern Daima 62.4-inch" />
       <div class="card-body">
         <div class="badges"><span class="badge tier2">Tier 2</span><span class="badge">Slatted</span><span class="badge">Square</span></div>
@@ -369,10 +401,11 @@
           <dt>Door Style</dt><dd>Slatted</dd>
           <dt>Corner Shape</dt><dd>Square</dd>
         </dl>
+        <div class="view-link">View on AllModern →</div>
       </div>
-    </article>
+    </a>
 
-    <article class="card">
+    <a class="card" href="https://us.roveconcepts.com/products/bennett-media-console-55" target="_blank" rel="noopener">
       <img class="card-image" src="https://placehold.co/800x500/dfece4/2b5d4a?text=Rove+Concepts+Bennet" alt="Rove Concepts Bennet" />
       <div class="card-body">
         <div class="badges"><span class="badge tier2">Tier 2</span><span class="badge">Smooth</span><span class="badge">Square</span></div>
@@ -383,10 +416,11 @@
           <dt>Door Style</dt><dd>Smooth</dd>
           <dt>Corner Shape</dt><dd>Square</dd>
         </dl>
+        <div class="view-link">View on Rove Concepts →</div>
       </div>
-    </article>
+    </a>
 
-    <article class="card">
+    <a class="card" href="https://www.allmodern.com/furniture/pdp/jaime-59-media-console-a000244447.html" target="_blank" rel="noopener">
       <img class="card-image" src="https://placehold.co/800x500/dfece4/2b5d4a?text=AllModern+Jaime+59%22" alt="AllModern Jaime 59-inch" />
       <div class="card-body">
         <div class="badges"><span class="badge tier2">Tier 2</span><span class="badge">Slatted</span><span class="badge">Square</span></div>
@@ -397,13 +431,14 @@
           <dt>Door Style</dt><dd>Slatted</dd>
           <dt>Corner Shape</dt><dd>Square</dd>
         </dl>
+        <div class="view-link">View on AllModern →</div>
       </div>
-    </article>
+    </a>
 
   </section>
 
   <footer>
-    Images are placeholders. Drop real product photos into each <code>&lt;img&gt;</code> <code>src</code> to customize.
+    Cards link to retailer product pages where real photos and live pricing live. Placeholder thumbnails shown in-feed.
   </footer>
 </body>
 </html>
