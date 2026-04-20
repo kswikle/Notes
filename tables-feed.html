@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Fluted & Slatted Media Console Feed</title>
+<style>
+  :root {
+    --bg: #f5f1ec;
+    --card: #ffffff;
+    --ink: #1f1d1b;
+    --muted: #6b655e;
+    --line: #e7e1d8;
+    --tier1: #8a6a4a;
+    --tier2: #2b5d4a;
+    --accent: #c08457;
+  }
+  * { box-sizing: border-box; }
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+  }
+  header {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 48px 24px 16px;
+    text-align: center;
+  }
+  header h1 {
+    font-size: 28px;
+    margin: 0 0 8px;
+    letter-spacing: -0.01em;
+  }
+  header p {
+    margin: 0;
+    color: var(--muted);
+    font-size: 15px;
+  }
+  .tier-header {
+    max-width: 720px;
+    margin: 32px auto 12px;
+    padding: 0 24px;
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+  }
+  .tier-header h2 {
+    font-size: 18px;
+    margin: 0;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+  }
+  .tier-header span {
+    color: var(--muted);
+    font-size: 13px;
+  }
+  .feed {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 0 24px 64px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.03);
+  }
+  .card-image {
+    width: 100%;
+    aspect-ratio: 16 / 10;
+    background: #efe9e0;
+    display: block;
+    object-fit: cover;
+  }
+  .card-body {
+    padding: 16px 18px 18px;
+  }
+  .badges {
+    display: flex;
+    gap: 6px;
+    flex-wrap: wrap;
+    margin-bottom: 8px;
+  }
+  .badge {
+    font-size: 11px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    padding: 3px 8px;
+    border-radius: 999px;
+    background: #f1ebe2;
+    color: var(--muted);
+  }
+  .badge.tier1 { background: #f2e6d8; color: var(--tier1); }
+  .badge.tier2 { background: #dfece4; color: var(--tier2); }
+  .card h3 {
+    margin: 0 0 4px;
+    font-size: 18px;
+  }
+  .price {
+    color: var(--accent);
+    font-weight: 600;
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+  dl {
+    margin: 0;
+    display: grid;
+    grid-template-columns: 110px 1fr;
+    row-gap: 4px;
+    column-gap: 12px;
+    font-size: 14px;
+  }
+  dt { color: var(--muted); }
+  dd { margin: 0; color: var(--ink); }
+  footer {
+    text-align: center;
+    color: var(--muted);
+    font-size: 12px;
+    padding: 0 24px 40px;
+  }
+</style>
+</head>
+<body>
+  <header>
+    <h1>Fluted & Slatted Media Consoles</h1>
+    <p>A shortlist of 18 tables, organized by tier. Swap the placeholder images for real product photos as needed.</p>
+  </header>
+
+  <div class="tier-header">
+    <h2>Tier 1</h2>
+    <span>Entry-Level</span>
+  </div>
+  <section class="feed">
+
+    <article class="card">
+      <img class="card-image" src="https://placehold.co/800x500/efe9e0/8a6a4a?text=LKTART+Fluted+Sideboard" alt="LKTART Fluted Sideboard" />
+      <div class="card-body">
+        <div class="badges"><span class="badge tier1">Tier 1</span><span class="badge">Fluted</span><span class="badge">Rounded</span></div>
+        <h3>LKTART Fluted Sideboard</h3>
+        <div class="price">~$269.79</div>
+        <dl>
+          <dt>Dimensions</dt><dd>64" × 15" × 24"</dd>
+          <dt>Door Style</dt><dd>Fluted (Wave Pattern)</dd>
+          <dt>Corner Shape</dt><dd>Rounded (Pill-Shaped)</dd>
+        </dl>
+      </div>
+    </article>
+
+    <article class="card">
+      <img class="card-image" src="https://placehold.co/800x500/efe9e0/8a6a4a?text=Panipeachy+Modern+Fluted" alt="Panipeachy Modern Fluted" />
+      <div class="card-body">
+        <div class="badges"><span class="badge tier1">Tier 1</span><span class="badge">Fluted</span><span class="badge">Rounded</span></div>
+        <h3>Panipeachy Modern Fluted</h3>
+        <div class="price">$347.89</div>
+        <dl>
+          <dt>Dimensions</dt><dd>~70" × 15" × 29.92"</dd>
+          <dt>Door Style</dt><dd>Fluted</dd>
+          <dt>Corner Shape</dt><dd>Rounded</dd>
+        </dl>
+      </div>
+    </article>
+
+    <article class="card">
+      <img class="card-image" src="https://placehold.co/800x500/efe9e0/8a6a4a?text=Costway+Fluted+Media+Stand" alt="Costway Fluted Media Stand" />
+      <div class="card-body">
+        <div class="badges"><span class="badge tier1">Tier 1</span><span class="badge">Fluted</span><span class="badge">Rounded</span></div>
+        <h3>Costway Fluted Media Stand</h3>
+        <div class="price">$129.99</div>
+        <dl>
+          <dt>Dimensions</dt><dd>60" × 15.5" × 24"</dd>
+          <dt>Door Style</dt><dd>Fluted</dd>
+          <dt>Corner Shape</dt><dd>Rounded</dd>
+        </dl>
+      </div>
+    </article>
+
+    <article class="card">
+      <img class="card-image" src="https://placehold.co/800x500/efe9e0/8a6a4a?text=70%22+Fluted+TV+Stand+(Target)" alt="70-inch Fluted TV Stand from Target" />
+      <div class="card-body">
+        <div class="badges"><span class="badge tier1">Tier 1</span><span class="badge">Fluted</span><span class="badge">Square</span></div>
+        <h3>70" Fluted TV Stand (Target)</h3>
+        <div class="price">$133.31</div>
+        <dl>
+          <dt>Dimensions</dt><dd>70" × 15" × 30"</dd>
+          <dt>Door Style</dt><dd>Fluted</dd>
+          <dt>Corner Shape</dt><dd>Square</dd>
+        </dl>
+      </div>
+    </article>
+
+    <article class="card">
+      <img class="card-image" src="https://placehold.co/800x500/efe9e0/8a6a4a?text=Walmart+62%22+MCM+Tambour" alt="Walmart 62-inch MCM Tambour" />
+      <div class="card-body">
+        <div class="badges"><span class="badge tier1">Tier 1</span><span class="badge">Slatted (Tambour)</span><span class="badge">Rounded</span></div>
+        <h3>Walmart "62-inch MCM" Tambour</h3>
+        <div class="price">$156.88</div>
+        <dl>
+          <dt>Dimensions</dt><dd>62" × 15.7" × 18"</dd>
+          <dt>Door Style</dt><dd>Slatted (Tambour)</dd>
+          <dt>Corner Shape</dt><dd>Rounded</dd>
+        </dl>
+      </div>
+    </article>
+
+    <article class="card">
+      <img class="card-image" src="https://placehold.co/800x500/efe9e0/8a6a4a?text=George+Oliver+Fluted+Console" alt="George Oliver Fluted Console" />
+      <div class="card-body">
+        <div class="badges"><span class="badge tier1">Tier 1</span><span class="badge">Fluted</span><span class="badge">Square</span></div>
+        <h3>George Oliver Fluted Console</h3>
+        <div class="price">$279.99</div>
+        <dl>
+          <dt>Dimensions</dt><dd>70.8" × 15.7" × 19.2"</dd>
+          <dt>Door Style</dt><dd>Fluted</dd>
+          <dt>Corner Shape</dt><dd>Square</dd>
+        </dl>
+      </div>
+    </article>
+
+    <article class="card">
+      <img class="card-image" src="https://placehold.co/800x500/efe9e0/8a6a4a?text=Walker+Edison+Reema%2FMaya" alt="Walker Edison Reema/Maya" />
+      <div class="card-body">
+        <div class="badges"><span class="badge tier1">Tier 1</span><span class="badge">Reeded</span><span class="badge">Square</span></div>
+        <h3>Walker Edison Reema/Maya</h3>
+        <div class="price">$299.99</div>
+        <dl>
+          <dt>Dimensions</dt><dd>70" × 15.75" × 16"</dd>
+          <dt>Door Style</dt><dd>Reeded</dd>
+          <dt>Corner Shape</dt><dd>Square</dd>
+        </dl>
+      </div>
+    </article>
+
+    <article class="card">
+      <img class="card-image" src="https://placehold.co/800x500/efe9e0/8a6a4a?text=Dextrus+Mid-Century+Stand" alt="Dextrus Mid-Century Stand" />
+      <div class="card-body">
+        <div class="badges"><span class="badge tier1">Tier 1</span><span class="badge">Smooth/Slatted</span><span class="badge">Square</span></div>
+        <h3>Dextrus Mid-Century Stand</h3>
+        <div class="price">$219.99</div>
+        <dl>
+          <dt>Dimensions</dt><dd>70" × 15.7" × 18"</dd>
+          <dt>Door Style</dt><dd>Smooth/Slatted</dd>
+          <dt>Corner Shape</dt><dd>Square</dd>
+        </dl>
+      </div>
+    </article>
+
+    <article class="card">
+      <img class="card-image" src="https://placehold.co/800x500/efe9e0/8a6a4a?text=GDFStudio+Roy+Farmhouse" alt="GDFStudio Roy Farmhouse" />
+      <div class="card-body">
+        <div class="badges"><span class="badge tier1">Tier 1</span><span class="badge">Tambour</span><span class="badge">Square</span></div>
+        <h3>GDFStudio Roy Farmhouse</h3>
+        <div class="price">$269.99</div>
+        <dl>
+          <dt>Dimensions</dt><dd>60" × 15.7" × 24"</dd>
+          <dt>Door Style</dt><dd>Tambour (Slatted)</dd>
+          <dt>Corner Shape</dt><dd>Square</dd>
+        </dl>
+      </div>
+    </article>
+
+  </section>
+
+  <div class="tier-header">
+    <h2>Tier 2</h2>
+    <span>Premium & Investment-Grade</span>
+  </div>
+  <section class="feed">
+
+    <article class="card">
+      <img class="card-image" src="https://placehold.co/800x500/dfece4/2b5d4a?text=Spruce+%26+Spring+Julian" alt="Spruce & Spring Julian" />
+      <div class="card-body">
+        <div class="badges"><span class="badge tier2">Tier 2</span><span class="badge">Smooth Walnut</span><span class="badge">Rounded</span></div>
+        <h3>Spruce & Spring Julian</h3>
+        <div class="price">$599.99</div>
+        <dl>
+          <dt>Dimensions</dt><dd>70.1" × 14.6" × 32"</dd>
+          <dt>Door Style</dt><dd>Smooth (Walnut Veneer)</dd>
+          <dt>Corner Shape</dt><dd>Rounded</dd>
+        </dl>
+      </div>
+    </article>
+
+    <article class="card">
+      <img class="card-image" src="https://placehold.co/800x500/dfece4/2b5d4a?text=Castlery+Luka+TV+Stand" alt="Castlery Luka TV Stand" />
+      <div class="card-body">
+        <div class="badges"><span class="badge tier2">Tier 2</span><span class="badge">Slatted (Vertical)</span><span class="badge">Square</span></div>
+        <h3>Castlery Luka TV Stand</h3>
+        <div class="price">$999.00</div>
+        <dl>
+          <dt>Dimensions</dt><dd>70.8" × 15.7" × 15.3"</dd>
+          <dt>Door Style</dt><dd>Slatted (Vertical)</dd>
+          <dt>Corner Shape</dt><dd>Square</dd>
+        </dl>
+      </div>
+    </article>
+
+    <article class="card">
+      <img class="card-image" src="https://placehold.co/800x500/dfece4/2b5d4a?text=Article+Lenia+63%22" alt="Article Lenia 63-inch" />
+      <div class="card-body">
+        <div class="badges"><span class="badge tier2">Tier 2</span><span class="badge">Slatted (Spindle)</span><span class="badge">Square</span></div>
+        <h3>Article Lenia 63"</h3>
+        <div class="price">$999.00</div>
+        <dl>
+          <dt>Dimensions</dt><dd>63" × 16" × 20"</dd>
+          <dt>Door Style</dt><dd>Slatted (Spindle)</dd>
+          <dt>Corner Shape</dt><dd>Square</dd>
+        </dl>
+      </div>
+    </article>
+
+    <article class="card">
+      <img class="card-image" src="https://placehold.co/800x500/dfece4/2b5d4a?text=Article+Nera+63%22" alt="Article Nera 63-inch" />
+      <div class="card-body">
+        <div class="badges"><span class="badge tier2">Tier 2</span><span class="badge">Smooth Veneer</span><span class="badge">Square</span></div>
+        <h3>Article Nera 63"</h3>
+        <div class="price">$999.00</div>
+        <dl>
+          <dt>Dimensions</dt><dd>63" × 16" × 20"</dd>
+          <dt>Door Style</dt><dd>Smooth (Veneer)</dd>
+          <dt>Corner Shape</dt><dd>Square</dd>
+        </dl>
+      </div>
+    </article>
+
+    <article class="card">
+      <img class="card-image" src="https://placehold.co/800x500/dfece4/2b5d4a?text=AllModern+Iris+Sideboard" alt="AllModern Iris Sideboard" />
+      <div class="card-body">
+        <div class="badges"><span class="badge tier2">Tier 2</span><span class="badge">Slatted (Tambour)</span><span class="badge">Pill-Shaped</span></div>
+        <h3>AllModern Iris Sideboard</h3>
+        <div class="price">$849.00</div>
+        <dl>
+          <dt>Dimensions</dt><dd>71" × 17.75" × 29.92"</dd>
+          <dt>Door Style</dt><dd>Slatted (Tambour)</dd>
+          <dt>Corner Shape</dt><dd>Pill-Shaped</dd>
+        </dl>
+      </div>
+    </article>
+
+    <article class="card">
+      <img class="card-image" src="https://placehold.co/800x500/dfece4/2b5d4a?text=Modway+Waterflute+70%22" alt="Modway Waterflute 70-inch" />
+      <div class="card-body">
+        <div class="badges"><span class="badge tier2">Tier 2</span><span class="badge">Fluted</span><span class="badge">Waterfall/Rounded</span></div>
+        <h3>Modway Waterflute 70"</h3>
+        <div class="price">$672.33</div>
+        <dl>
+          <dt>Dimensions</dt><dd>70" × 15.75" × 31"</dd>
+          <dt>Door Style</dt><dd>Fluted</dd>
+          <dt>Corner Shape</dt><dd>Waterfall / Rounded</dd>
+        </dl>
+      </div>
+    </article>
+
+    <article class="card">
+      <img class="card-image" src="https://placehold.co/800x500/dfece4/2b5d4a?text=AllModern+Daima+62.4%22" alt="AllModern Daima 62.4-inch" />
+      <div class="card-body">
+        <div class="badges"><span class="badge tier2">Tier 2</span><span class="badge">Slatted</span><span class="badge">Square</span></div>
+        <h3>AllModern Daima 62.4"</h3>
+        <div class="price">~$899.00</div>
+        <dl>
+          <dt>Dimensions</dt><dd>62.4" × 15" × 22"</dd>
+          <dt>Door Style</dt><dd>Slatted</dd>
+          <dt>Corner Shape</dt><dd>Square</dd>
+        </dl>
+      </div>
+    </article>
+
+    <article class="card">
+      <img class="card-image" src="https://placehold.co/800x500/dfece4/2b5d4a?text=Rove+Concepts+Bennet" alt="Rove Concepts Bennet" />
+      <div class="card-body">
+        <div class="badges"><span class="badge tier2">Tier 2</span><span class="badge">Smooth</span><span class="badge">Square</span></div>
+        <h3>Rove Concepts Bennet</h3>
+        <div class="price">$650.00 (Used)</div>
+        <dl>
+          <dt>Dimensions</dt><dd>55" × 16.5" × 23.6"</dd>
+          <dt>Door Style</dt><dd>Smooth</dd>
+          <dt>Corner Shape</dt><dd>Square</dd>
+        </dl>
+      </div>
+    </article>
+
+    <article class="card">
+      <img class="card-image" src="https://placehold.co/800x500/dfece4/2b5d4a?text=AllModern+Jaime+59%22" alt="AllModern Jaime 59-inch" />
+      <div class="card-body">
+        <div class="badges"><span class="badge tier2">Tier 2</span><span class="badge">Slatted</span><span class="badge">Square</span></div>
+        <h3>AllModern Jaime 59"</h3>
+        <div class="price">$899.00</div>
+        <dl>
+          <dt>Dimensions</dt><dd>59" × 15" × 20"</dd>
+          <dt>Door Style</dt><dd>Slatted</dd>
+          <dt>Corner Shape</dt><dd>Square</dd>
+        </dl>
+      </div>
+    </article>
+
+  </section>
+
+  <footer>
+    Images are placeholders. Drop real product photos into each <code>&lt;img&gt;</code> <code>src</code> to customize.
+  </footer>
+</body>
+</html>
